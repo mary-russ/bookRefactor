@@ -1,4 +1,5 @@
 <?php
+
 if ($_POST) {
     $author_name = trim($_POST['author_name']);
     if (mb_strlen($author_name) < 2) {

@@ -1,5 +1,5 @@
 
-<form method="post" action="add_book.php">
+<form method="post" action="index.php?page=add_book">
     Име: <input type="text" name="book_name" />
     </br></br>
 

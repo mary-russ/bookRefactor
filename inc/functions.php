@@ -1,15 +1,12 @@
 <?php
-
 mb_internal_encoding('UTF-8');
 $db = mysqli_connect('localhost', 'root', '', 'books');
 if (!$db) {
     echo 'No database';
 }
+
 mysqli_set_charset($db, 'utf8');
 
-function render($data, $name){
-	include $name;
-}
 
 function getAuthors($db) {
     $q = mysqli_query($db, 'SELECT * FROM authors');
@@ -37,4 +34,7 @@ function isAuthorIdExists($db, $ids) {
         return true;
     }
     return false;
+}
+function render($data, $name){
+	include $name;
 }

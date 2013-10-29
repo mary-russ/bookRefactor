@@ -1,4 +1,4 @@
-<form method="post" action="authors.php">
+<form method="post" action="index.php?page=authors">
     Име: <input type="text" name="author_name" />
     <input type="submit" value="Добави" />    
 </form>
